@@ -1,0 +1,29 @@
+PHASE 2 — TASK C/D: MULTI-TURN MEMORY + SCHEMA
+============================================================
+
+--- TURN 1 ---
+QUERY: What is the status of loan application LA-0001?
+ROUTE: status
+TRACE: load_memory -> classify_intent -> status_lookup -> format_response -> persist_memory
+ANSWER: Loan application LA-0001 has status Submitted. The loan amount is ₹625,000. Escalation score: 0.345 (threshold: 0.330).
+
+--- TURN 1 STRUCTURED OUTPUT VALIDATION ---
+VALIDATION: PASS
+STRUCTURED_RESPONSE: {'answer': 'Loan application LA-0001 has status Submitted. The loan amountis ₹625,000. Escalation score: 0.345 (threshold: 0.330).', 'route': 'status', 'escalation_score': 0.345, 'thread_id': 'phase2_multiturn_demo', 'record_id': 'LA-0001', 'grounded': None}
+
+--- TURN 2 ---
+QUERY: What is its current status?
+ROUTE: status
+REUSED_RECORD_ID: LA-0001
+TRACE: load_memory -> classify_intent -> status_lookup -> format_response -> persist_memory
+ANSWER: Loan application LA-0001 has status Submitted. The loan amount is ₹625,000. Escalation score: 0.345 (threshold: 0.330).
+
+--- TURN 2 STRUCTURED OUTPUT VALIDATION ---
+VALIDATION: PASS
+STRUCTURED_RESPONSE: {'answer': 'Loan application LA-0001 has status Submitted. The loan amountis ₹625,000. Escalation score: 0.345 (threshold: 0.330).', 'route': 'status', 'escalation_score': 0.345, 'thread_id': 'phase2_multiturn_demo', 'record_id': 'LA-0001', 'grounded': None}
+
+--- PERSISTED HISTORY ---
+user: What is the status of loan application LA-0001?
+assistant: Loan application LA-0001 has status Submitted. The loan amount is ₹625,000. Escalation score: 0.345 (threshold: 0.330).
+user: What is its current status?
+assistant: Loan application LA-0001 has status Submitted. The loan amount is ₹625,000. Escalation score: 0.345 (threshold: 0.330).

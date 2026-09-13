@@ -1,0 +1,13 @@
+{
+  "thread_id": "phase2_fresh_demo",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is its current status?"
+    },
+    {
+      "role": "assistant",
+      "content": "I don't know based on the Cred knowledge base."
+    }
+  ]
+}

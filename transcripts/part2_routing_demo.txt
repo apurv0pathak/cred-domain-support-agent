@@ -1,0 +1,19 @@
+PHASE 2 — TASK B: LANGGRAPH ROUTING DEMO
+
+============================================================
+RAG ROUTE
+============================================================
+QUERY: What documents are required for KYC?
+Loading weights: 100%|████████████████████████████████████| 103/103 [00:00<00:00, 19751.89it/s]
+ROUTE: rag
+TRACE: classify_intent -> rag_answer -> format_response
+ANSWER: Customer identity and address must be established using accepted KYC documents. Common examples include government-issued identity documents, officially recognized address evidence, and photographs or other information required by the applicable onboarding process. Additional documents may be requested when the customer's profile, account type, or regulatory requirements require enhanced verification.
+
+============================================================
+STATUS TOOL ROUTE
+============================================================
+QUERY: What is the status of loan application LA-0001?
+ROUTE: status
+TRACE: classify_intent -> status_lookup -> format_response
+ANSWER: Loan application LA-0001 has status Submitted. The loan amount is ₹625,000. Escalation score: 0.345 (threshold: 0.330).
+ESCALATION_SCORE: 0.345

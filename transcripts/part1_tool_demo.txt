@@ -1,0 +1,43 @@
+PHASE 2 — TASK A: STATUS TOOL DEMO
+==================================================
+
+Escalation formula:
+score = 0.55 * fraud_signal + 0.45 * (1 - days_since_created / 30)
+
+Fraud weight: 0.55
+Recency weight: 0.45
+Actual dataset 25th percentile of days_since_created: 8.0
+Dataset-calibrated escalation threshold: 0.33
+
+--- FLAGGED / ABOVE THRESHOLD ---
+record_id: LA-0006
+flagged_for_fraud_review: True
+days_since_created: 8
+status: Rejected
+loan_amount_inr: 7710000
+escalation_score: 0.88
+escalation_threshold: 0.33
+should_escalate: True
+
+--- UNFLAGGED / ABOVE THRESHOLD ---
+record_id: LA-0001
+flagged_for_fraud_review: False
+days_since_created: 7
+status: Submitted
+loan_amount_inr: 625000
+escalation_score: 0.345
+escalation_threshold: 0.33
+should_escalate: True
+
+--- UNFLAGGED / BELOW THRESHOLD ---
+record_id: LA-0004
+flagged_for_fraud_review: False
+days_since_created: 22
+status: Approved
+loan_amount_inr: 1415000
+escalation_score: 0.12
+escalation_threshold: 0.33
+should_escalate: False
+
+--- UNKNOWN RECORD ---
+{'found': False, 'record_id': 'CRED-NOT-A-REAL-RECORD', 'error': 'Loan application record not found.'}

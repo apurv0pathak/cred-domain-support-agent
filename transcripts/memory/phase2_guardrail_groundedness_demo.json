@@ -1,0 +1,13 @@
+{
+  "thread_id": "phase2_guardrail_groundedness_demo",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is the weather today?"
+    },
+    {
+      "role": "assistant",
+      "content": "I don't know based on the Cred knowledge base."
+    }
+  ]
+}

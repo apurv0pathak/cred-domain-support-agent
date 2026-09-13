@@ -1,0 +1,21 @@
+{
+  "thread_id": "phase2_multiturn_demo",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What is the status of loan application LA-0001?"
+    },
+    {
+      "role": "assistant",
+      "content": "Loan application LA-0001 has status Submitted. The loan amount is ₹625,000. Escalation score: 0.345 (threshold: 0.330)."
+    },
+    {
+      "role": "user",
+      "content": "What is its current status?"
+    },
+    {
+      "role": "assistant",
+      "content": "Loan application LA-0001 has status Submitted. The loan amount is ₹625,000. Escalation score: 0.345 (threshold: 0.330)."
+    }
+  ]
+}
