@@ -1,3 +1,7 @@
 pytest
+chromadb
+sentence_transformers
 langgraph
 pydantic
+fastapi
+uvicorn
