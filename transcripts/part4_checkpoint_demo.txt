@@ -1,0 +1,56 @@
+Phase 4 Task 15 — SQLite Checkpointing
+==========================================
+Checkpoint database: checkpoints.sqlite
+Thread ID: phase4-checkpoint-demo
+
+FIRST EXECUTION
+----------------
+EXECUTING node_a
+  node_a was NOT loaded from checkpoint.
+EXECUTING node_b
+  node_b was NOT loaded from checkpoint.
+
+First execution returned at the configured breakpoint.
+
+Checkpointed state after first execution
+----------------------------------------
+next nodes: ('node_c',)
+node_a_result: Node A completed.
+node_b_result: Node B completed.
+node_c_result: 
+node_d_result: 
+execution_log: ['node_a executed', 'node_b executed']
+
+Checkpoint database exists: True
+
+RESUMING SAME THREAD
+--------------------
+Using thread ID: phase4-checkpoint-demo
+Passing None so LangGraph resumes from the checkpoint.
+EXECUTING node_c
+EXECUTING node_d
+
+Resumed execution completed.
+
+Final state after resume
+------------------------
+next nodes: ()
+node_a_result: Node A completed.
+node_b_result: Node B completed.
+node_c_result: Node C completed.
+node_d_result: Node D completed.
+execution_log: ['node_a executed', 'node_b executed', 'node_c executed', 'node_d executed']
+
+CHECKPOINT VERIFICATION
+-----------------------
+Execution log: ['node_a executed', 'node_b executed', 'node_c executed', 'node_d executed']
+node_a execution count: 1
+node_b execution count: 1
+node_c execution count: 1
+node_d execution count: 1
+
+Checkpoint verification: PASS
+node_a and node_b were completed before the pause.
+node_a and node_b were NOT re-executed after resume.
+node_c and node_d executed only after resume.
+Same thread_id was used for both executions.

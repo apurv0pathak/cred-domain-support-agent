@@ -1,0 +1,37 @@
+Phase 4 Task 16 — Timeouts and Retries
+==========================================
+
+RETRY DEMONSTRATION
+-------------------
+Transient node attempt 1
+  retrying after 0.05s (attempt 2/4)
+Transient node attempt 2
+  retrying after 0.10s (attempt 3/4)
+Transient node attempt 3
+Result: Transient node succeeded.
+Total attempts: 3
+Retry verification: PASS
+The transient node failed twice and recovered on the third attempt.
+Retry policy: max_attempts=4, initial_interval=0.05s, max_interval=0.20s, jitter=0.00s
+
+PER-NODE TIMEOUT DEMONSTRATION
+------------------------------
+Configured node timeout: 0.20s
+Simulated node duration: 0.60s
+Slow node sleeping for 0.60s
+Per-node timeout fired cleanly after 0.20s.
+Observed elapsed time: 0.21s
+Per-node timeout verification: PASS
+The simulated node was cancelled by the per-node timeout instead of hanging.
+
+GLOBAL GRAPH TIMEOUT DEMONSTRATION
+----------------------------------
+Configured global timeout: 0.50s
+Simulated total duration: 1.00s
+Simulated graph work sleeping for 1.00s
+Global graph timeout fired cleanly after 0.50s.
+Observed elapsed time: 0.51s
+Global timeout verification: PASS
+The simulated whole-graph run was cancelled by the global timeout.
+
+ALL TASK 16 VERIFICATIONS: PASS

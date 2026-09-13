@@ -5,3 +5,5 @@ langgraph
 pydantic
 fastapi
 uvicorn
+fastmcp
+langgraph-checkpoint-sqlite

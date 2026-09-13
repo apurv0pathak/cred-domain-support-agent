@@ -1,0 +1,12 @@
+Connected to MCP server.
+Available tools:
+- lookup_loan_application_status
+
+Record ID: LA-0001
+MCP response:
+"CallToolResult(content=[TextContent(type='text', text='{\"found\":true,\"record_id\":\"LA-0001\",\"status\":\"Submitted\",\"loan_amount_inr\":625000,\"escalation_score\":0.345,\"escalation_threshold\":0.33,\"should_escalate\":true}', annotations=None, meta=None)], structured_content={'found': True, 'record_id': 'LA-0001', 'status': 'Submitted', 'loan_amount_inr': 625000, 'escalation_score': 0.345, 'escalation_threshold': 0.33, 'should_escalate': True}, meta={'io.modelcontextprotocol/serverInfo': {'name': 'Cred Domain Support Agent MCP Server', 'version': '4.0.3'}}, data={'found': True, 'record_id': 'LA-0001', 'status': 'Submitted', 'loan_amount_inr': 625000, 'escalation_score': 0.345, 'escalation_threshold': 0.33, 'should_escalate': True}, is_error=False)"
+------------------------------------------------------------
+Record ID: LA-0002
+MCP response:
+"CallToolResult(content=[TextContent(type='text', text='{\"found\":true,\"record_id\":\"LA-0002\",\"status\":\"Rejected\",\"loan_amount_inr\":1195000,\"escalation_score\":0.42,\"escalation_threshold\":0.33,\"should_escalate\":true}', annotations=None, meta=None)], structured_content={'found': True, 'record_id': 'LA-0002', 'status': 'Rejected', 'loan_amount_inr': 1195000, 'escalation_score': 0.42, 'escalation_threshold': 0.33, 'should_escalate': True}, meta={'io.modelcontextprotocol/serverInfo': {'name': 'Cred Domain Support Agent MCP Server', 'version': '4.0.3'}}, data={'found': True, 'record_id': 'LA-0002', 'status': 'Rejected', 'loan_amount_inr': 1195000, 'escalation_score': 0.42, 'escalation_threshold': 0.33, 'should_escalate': True}, is_error=False)"
+------------------------------------------------------------
