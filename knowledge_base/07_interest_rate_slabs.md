@@ -1,0 +1,3 @@
+# Interest Rate Slabs
+
+Loan interest rates may be organized into slabs based on factors such as loan type, applicant risk profile, loan amount, tenure, and credit history. A stronger credit profile may qualify for a more favorable rate where the applicable product policy permits risk-based pricing. The applicable slab should always be determined using the product rules and customer information available at the time of assessment.

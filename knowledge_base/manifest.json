@@ -1,0 +1,52 @@
+{
+  "documents": [
+    {
+      "file": "01_loan_eligibility.md",
+      "topic": "loan eligibility by loan type"
+    },
+    {
+      "file": "02_emi_calculation.md",
+      "topic": "EMI calculation rules"
+    },
+    {
+      "file": "03_credit_card_fees.md",
+      "topic": "credit-card fee structure"
+    },
+    {
+      "file": "04_kyc_requirements.md",
+      "topic": "KYC document requirements"
+    },
+    {
+      "file": "05_fraud_dispute_resolution.md",
+      "topic": "fraud-dispute resolution process"
+    },
+    {
+      "file": "06_account_closure.md",
+      "topic": "account-closure process"
+    },
+    {
+      "file": "07_interest_rate_slabs.md",
+      "topic": "interest-rate slabs"
+    },
+    {
+      "file": "08_prepayment_penalties.md",
+      "topic": "prepayment-penalty rules"
+    },
+    {
+      "file": "09_minimum_balance.md",
+      "topic": "minimum-balance requirements"
+    },
+    {
+      "file": "10_credit_score_factors.md",
+      "topic": "credit-score impact factors"
+    },
+    {
+      "file": "11_joint_account_rules.md",
+      "topic": "joint-account rules"
+    },
+    {
+      "file": "12_nri_account_eligibility.md",
+      "topic": "NRI-account eligibility"
+    }
+  ]
+}

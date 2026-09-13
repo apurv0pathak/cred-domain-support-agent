@@ -1,0 +1,3 @@
+# Loan Eligibility by Loan Type
+
+Personal loans are generally assessed using factors such as age, income, employment stability, existing obligations, and credit history. Home loans additionally consider property-related documentation and the applicant's ability to support a long repayment period. Auto loans consider income, repayment capacity, and vehicle-related information. Education loans consider the student's course, institution, expected costs, and the financial profile of the applicant or co-borrower. Business loans consider business vintage, cash flow, repayment capacity, and relevant business documentation.

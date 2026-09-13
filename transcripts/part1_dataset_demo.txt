@@ -1,0 +1,20 @@
+=== CRED LOAN APPLICATION DATASET ===
+Dataset seed: 42
+Generation attempts: 1
+Total records: 50
+
+Category counts:
+  Personal Loan: 15
+  Home Loan: 8
+  Auto Loan: 11
+  Education Loan: 8
+  Business Loan: 8
+
+Status counts:
+  Submitted: 9
+  Under Review: 9
+  Approved: 8
+  Rejected: 8
+  Disbursed: 16
+
+Fraud-review flags: 11/50 (22.00%)

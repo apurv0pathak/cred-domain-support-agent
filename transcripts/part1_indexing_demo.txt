@@ -1,0 +1,2 @@
+fixed: cred_kb_fixed | 18 chunks | 12 documents
+sentence: cred_kb_sentence | 13 chunks | 12 documents

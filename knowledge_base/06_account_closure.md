@@ -1,0 +1,3 @@
+# Account Closure Process
+
+An account-holder requesting closure must complete the applicable closure request and satisfy any pending obligations. Outstanding balances, unresolved transactions, linked products, and required identity verification may need to be addressed before closure is completed. After the required checks are complete, the institution processes the closure and provides confirmation through the applicable channel.

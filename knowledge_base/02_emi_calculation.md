@@ -1,0 +1,3 @@
+# EMI Calculation Rules
+
+Equated Monthly Instalment (EMI) depends on the principal, applicable annual interest rate, and repayment tenure. The standard reducing-balance EMI formula is EMI = P × r × (1+r)^n / ((1+r)^n - 1), where P is principal, r is the monthly interest rate, and n is the number of monthly instalments. The monthly rate is obtained by dividing the annual rate by 12 when the annual rate is expressed as a nominal percentage.

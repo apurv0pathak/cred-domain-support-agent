@@ -1,0 +1,3 @@
+# Fraud and Dispute Resolution Process
+
+A customer who identifies an unauthorized transaction should report it promptly through the supported dispute channel. The account or transaction may be reviewed while relevant evidence is collected, and additional customer information may be requested during investigation. The final resolution depends on the investigation findings, transaction details, applicable policy, and any required regulatory or payment-network procedures.

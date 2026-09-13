@@ -1,0 +1,60 @@
+=== GROUNDED GENERATION DEMO ===
+Strategy: sentence
+Top-k: 3
+Similarity threshold: 0.05
+Loading weights: 100%|██████| 103/103 [00:00<00:00, 819.64it/s]
+
+======================================================================
+QUERY: What documents are required for KYC?
+GROUNDED: True
+THRESHOLD: 0.05
+TOP-1 SIMILARITY: 0.486820
+TOP-1 DOCUMENT: 04_kyc_requirements
+ANSWER: Customer identity and address must be established using accepted KYC documents. Common examples include government-issued identity documents, officially recognized address evidence, and photographs or other information required by the applicable onboarding process. Additional documents may be requested when the customer's profile, account type, or regulatory requirements require enhanced verification.
+Loading weights: 100%|█████| 103/103 [00:00<00:00, 1099.73it/s]
+
+======================================================================
+QUERY: How is EMI calculated for a loan?
+GROUNDED: True
+THRESHOLD: 0.05
+TOP-1 SIMILARITY: 0.483376
+TOP-1 DOCUMENT: 02_emi_calculation
+ANSWER: Equated Monthly Instalment (EMI) depends on the principal, applicable annual interest rate, and repayment tenure. The standard reducing-balance EMI formula is EMI = P × r × (1+r)^n / ((1+r)^n - 1), where P is principal, r is the monthly interest rate, and n is the number of monthly instalments.
+Loading weights: 100%|█████| 103/103 [00:00<00:00, 1522.17it/s]
+
+======================================================================
+QUERY: What factors affect a credit score?
+GROUNDED: True
+THRESHOLD: 0.05
+TOP-1 SIMILARITY: 0.482284
+TOP-1 DOCUMENT: 10_credit_score_factors
+ANSWER: Credit scores are influenced by factors such as repayment history, credit utilization, length of credit history, recent credit applications, and the mix of credit accounts. Timely repayments generally support a healthy credit profile, while missed or delayed payments can negatively affect it. Applying for many new credit facilities within a short period can also influence the profile.
+Loading weights: 100%|█████| 103/103 [00:00<00:00, 1003.12it/s]
+
+======================================================================
+QUERY: What is the process for closing an account?
+GROUNDED: True
+THRESHOLD: 0.05
+TOP-1 SIMILARITY: 0.132282
+TOP-1 DOCUMENT: 06_account_closure
+ANSWER: An account-holder requesting closure must complete the applicable closure request and satisfy any pending obligations.
+Loading weights: 100%|█████| 103/103 [00:00<00:00, 1108.53it/s]
+
+======================================================================
+QUERY: What are the rules for prepayment penalties?
+GROUNDED: True
+THRESHOLD: 0.05
+TOP-1 SIMILARITY: 0.092424
+TOP-1 DOCUMENT: 08_prepayment_penalties
+ANSWER: Prepayment means repaying some or all of a loan principal before the scheduled maturity date. Whether a prepayment charge applies depends on the loan product, repayment structure, applicable customer category, and prevailing policy. Customers should verify the applicable prepayment terms before making a large early repayment because charges and eligibility conditions can differ between products.
+Loading weights: 100%|█████| 103/103 [00:00<00:00, 1103.94it/s]
+
+======================================================================
+QUERY: What is the weather in Delhi today?
+GROUNDED: False
+THRESHOLD: 0.05
+TOP-1 SIMILARITY: -0.816783
+TOP-1 DOCUMENT: 12_nri_account_eligibility
+ANSWER: I don't know based on the Cred knowledge base.
+
+======================================================================

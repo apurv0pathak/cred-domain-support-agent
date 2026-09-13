@@ -1,0 +1,3 @@
+# KYC Document Requirements
+
+Customer identity and address must be established using accepted KYC documents. Common examples include government-issued identity documents, officially recognized address evidence, and photographs or other information required by the applicable onboarding process. Additional documents may be requested when the customer's profile, account type, or regulatory requirements require enhanced verification.

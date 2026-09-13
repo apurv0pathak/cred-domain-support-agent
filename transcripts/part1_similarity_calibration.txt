@@ -1,0 +1,101 @@
+=== IN-SCOPE QUERIES ===
+
+QUERY: What documents are required for KYC?
+Loading weights: 100%|██████| 103/103 [00:00<00:00, 813.54it/s]
+
+  STRATEGY: fixed
+    rank=1 similarity=0.493123 document=04_kyc_requirements chunk=04_kyc_requirements__fixed__000
+    rank=2 similarity=0.000455 document=12_nri_account_eligibility chunk=12_nri_account_eligibility__fixed__000
+    rank=3 similarity=-0.414853 document=04_kyc_requirements chunk=04_kyc_requirements__fixed__001
+Loading weights: 100%|█████| 103/103 [00:00<00:00, 1235.84it/s]
+
+  STRATEGY: sentence
+    rank=1 similarity=0.486820 document=04_kyc_requirements chunk=04_kyc_requirements__sentence__000
+    rank=2 similarity=0.000455 document=12_nri_account_eligibility chunk=12_nri_account_eligibility__sentence__000
+    rank=3 similarity=-0.453787 document=06_account_closure chunk=06_account_closure__sentence__000
+
+QUERY: How is EMI calculated for a loan?
+Loading weights: 100%|██████| 103/103 [00:00<00:00, 903.83it/s]
+
+  STRATEGY: fixed
+    rank=1 similarity=0.461034 document=02_emi_calculation chunk=02_emi_calculation__fixed__000
+    rank=2 similarity=-0.185543 document=08_prepayment_penalties chunk=08_prepayment_penalties__fixed__000
+    rank=3 similarity=-0.190245 document=07_interest_rate_slabs chunk=07_interest_rate_slabs__fixed__000
+Loading weights: 100%|██████| 103/103 [00:00<00:00, 961.09it/s]
+
+  STRATEGY: sentence
+    rank=1 similarity=0.483376 document=02_emi_calculation chunk=02_emi_calculation__sentence__000
+    rank=2 similarity=-0.185543 document=08_prepayment_penalties chunk=08_prepayment_penalties__sentence__000
+    rank=3 similarity=-0.218374 document=07_interest_rate_slabs chunk=07_interest_rate_slabs__sentence__000
+
+QUERY: What factors affect a credit score?
+Loading weights: 100%|██████| 103/103 [00:00<00:00, 893.70it/s]
+
+  STRATEGY: fixed
+    rank=1 similarity=0.482284 document=10_credit_score_factors chunk=10_credit_score_factors__fixed__000
+    rank=2 similarity=-0.186846 document=01_loan_eligibility chunk=01_loan_eligibility__fixed__000
+    rank=3 similarity=-0.298103 document=07_interest_rate_slabs chunk=07_interest_rate_slabs__fixed__000
+Loading weights: 100%|█████| 103/103 [00:00<00:00, 1051.20it/s]
+
+  STRATEGY: sentence
+    rank=1 similarity=0.482284 document=10_credit_score_factors chunk=10_credit_score_factors__sentence__000
+    rank=2 similarity=-0.160170 document=01_loan_eligibility chunk=01_loan_eligibility__sentence__000
+    rank=3 similarity=-0.316658 document=07_interest_rate_slabs chunk=07_interest_rate_slabs__sentence__000
+
+QUERY: What is the process for closing an account?
+Loading weights: 100%|█████| 103/103 [00:00<00:00, 1125.81it/s]
+
+  STRATEGY: fixed
+    rank=1 similarity=0.127687 document=06_account_closure chunk=06_account_closure__fixed__000
+    rank=2 similarity=-0.091395 document=11_joint_account_rules chunk=11_joint_account_rules__fixed__000
+    rank=3 similarity=-0.307443 document=09_minimum_balance chunk=09_minimum_balance__fixed__000
+Loading weights: 100%|██████| 103/103 [00:00<00:00, 725.04it/s]
+
+  STRATEGY: sentence
+    rank=1 similarity=0.132282 document=06_account_closure chunk=06_account_closure__sentence__000
+    rank=2 similarity=-0.091395 document=11_joint_account_rules chunk=11_joint_account_rules__sentence__000
+    rank=3 similarity=-0.307443 document=09_minimum_balance chunk=09_minimum_balance__sentence__000
+
+QUERY: What are the rules for prepayment penalties?
+Loading weights: 100%|██████| 103/103 [00:00<00:00, 982.33it/s]
+
+  STRATEGY: fixed
+    rank=1 similarity=0.092424 document=08_prepayment_penalties chunk=08_prepayment_penalties__fixed__000
+    rank=2 similarity=-0.284794 document=05_fraud_dispute_resolution chunk=05_fraud_dispute_resolution__fixed__001
+    rank=3 similarity=-0.385975 document=07_interest_rate_slabs chunk=07_interest_rate_slabs__fixed__001
+Loading weights: 100%|█████| 103/103 [00:00<00:00, 1095.52it/s]
+
+  STRATEGY: sentence
+    rank=1 similarity=0.092424 document=08_prepayment_penalties chunk=08_prepayment_penalties__sentence__000
+    rank=2 similarity=-0.536403 document=06_account_closure chunk=06_account_closure__sentence__000
+    rank=3 similarity=-0.560610 document=09_minimum_balance chunk=09_minimum_balance__sentence__000
+
+=== OUT-OF-SCOPE QUERIES ===
+
+QUERY: What is the weather in Delhi today?
+Loading weights: 100%|█████| 103/103 [00:00<00:00, 1078.53it/s]
+
+  STRATEGY: fixed
+    rank=1 similarity=-0.778358 document=02_emi_calculation chunk=02_emi_calculation__fixed__001
+    rank=2 similarity=-0.816783 document=12_nri_account_eligibility chunk=12_nri_account_eligibility__fixed__000
+    rank=3 similarity=-0.902177 document=02_emi_calculation chunk=02_emi_calculation__fixed__000
+Loading weights: 100%|█████| 103/103 [00:00<00:00, 1234.68it/s]
+
+  STRATEGY: sentence
+    rank=1 similarity=-0.816783 document=12_nri_account_eligibility chunk=12_nri_account_eligibility__sentence__000
+    rank=2 similarity=-0.922321 document=02_emi_calculation chunk=02_emi_calculation__sentence__000
+    rank=3 similarity=-0.977153 document=04_kyc_requirements chunk=04_kyc_requirements__sentence__000
+
+QUERY: Who won the latest cricket match?
+Loading weights: 100%|█████| 103/103 [00:00<00:00, 1165.81it/s]
+
+  STRATEGY: fixed
+    rank=1 similarity=-0.792805 document=02_emi_calculation chunk=02_emi_calculation__fixed__000
+    rank=2 similarity=-0.811005 document=07_interest_rate_slabs chunk=07_interest_rate_slabs__fixed__001
+    rank=3 similarity=-0.848907 document=04_kyc_requirements chunk=04_kyc_requirements__fixed__001
+Loading weights: 100%|█████| 103/103 [00:00<00:00, 1148.13it/s]
+
+  STRATEGY: sentence
+    rank=1 similarity=-0.805880 document=02_emi_calculation chunk=02_emi_calculation__sentence__000
+    rank=2 similarity=-0.877681 document=12_nri_account_eligibility chunk=12_nri_account_eligibility__sentence__000
+    rank=3 similarity=-0.889699 document=04_kyc_requirements chunk=04_kyc_requirements__sentence__000

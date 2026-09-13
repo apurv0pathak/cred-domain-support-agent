@@ -1,0 +1,168 @@
+=== PHASE 1 RETRIEVAL EVALUATION ===
+Top-k: 3
+Metric level: parent document
+Duplicate parent documents: deduplicated
+
+########################################################################
+STRATEGY: fixed
+########################################################################
+Loading weights: 100%|██████████████████████████████████████| 103/103 [00:00<00:00, 5801.02it/s]
+
+========================================================================
+QUERY: What documents are required for KYC?
+STRATEGY: fixed
+RELEVANT DOCUMENTS: ['04_kyc_requirements']
+RETRIEVED DOCUMENTS (deduplicated): ['04_kyc_requirements', '12_nri_account_eligibility']
+RELEVANT RETRIEVED: ['04_kyc_requirements']
+Precision@3 = 1 / 3 = 0.3333
+Recall@3 = 1 / 1 = 1.0000
+Retrieved chunk details:
+  1. document=04_kyc_requirements similarity=0.493123 chunk=04_kyc_requirements__fixed__000
+  2. document=12_nri_account_eligibility similarity=0.000455 chunk=12_nri_account_eligibility__fixed__000
+  3. document=04_kyc_requirements similarity=-0.414853 chunk=04_kyc_requirements__fixed__001
+Loading weights: 100%|██████████████████████████████████████| 103/103 [00:00<00:00, 3347.85it/s]
+
+========================================================================
+QUERY: How is EMI calculated for a loan?
+STRATEGY: fixed
+RELEVANT DOCUMENTS: ['02_emi_calculation']
+RETRIEVED DOCUMENTS (deduplicated): ['02_emi_calculation', '08_prepayment_penalties', '07_interest_rate_slabs']
+RELEVANT RETRIEVED: ['02_emi_calculation']
+Precision@3 = 1 / 3 = 0.3333
+Recall@3 = 1 / 1 = 1.0000
+Retrieved chunk details:
+  1. document=02_emi_calculation similarity=0.461034 chunk=02_emi_calculation__fixed__000
+  2. document=08_prepayment_penalties similarity=-0.185543 chunk=08_prepayment_penalties__fixed__000
+  3. document=07_interest_rate_slabs similarity=-0.190245 chunk=07_interest_rate_slabs__fixed__000
+Loading weights: 100%|██████████████████████████████████████| 103/103 [00:00<00:00, 3910.76it/s]
+
+========================================================================
+QUERY: What factors affect a credit score?
+STRATEGY: fixed
+RELEVANT DOCUMENTS: ['10_credit_score_factors']
+RETRIEVED DOCUMENTS (deduplicated): ['10_credit_score_factors', '01_loan_eligibility', '07_interest_rate_slabs']
+RELEVANT RETRIEVED: ['10_credit_score_factors']
+Precision@3 = 1 / 3 = 0.3333
+Recall@3 = 1 / 1 = 1.0000
+Retrieved chunk details:
+  1. document=10_credit_score_factors similarity=0.482284 chunk=10_credit_score_factors__fixed__000
+  2. document=01_loan_eligibility similarity=-0.186846 chunk=01_loan_eligibility__fixed__000
+  3. document=07_interest_rate_slabs similarity=-0.298103 chunk=07_interest_rate_slabs__fixed__000
+Loading weights: 100%|██████████████████████████████████████| 103/103 [00:00<00:00, 4060.47it/s]
+
+========================================================================
+QUERY: What is the process for closing an account?
+STRATEGY: fixed
+RELEVANT DOCUMENTS: ['06_account_closure']
+RETRIEVED DOCUMENTS (deduplicated): ['06_account_closure', '11_joint_account_rules', '09_minimum_balance']
+RELEVANT RETRIEVED: ['06_account_closure']
+Precision@3 = 1 / 3 = 0.3333
+Recall@3 = 1 / 1 = 1.0000
+Retrieved chunk details:
+  1. document=06_account_closure similarity=0.127687 chunk=06_account_closure__fixed__000
+  2. document=11_joint_account_rules similarity=-0.091395 chunk=11_joint_account_rules__fixed__000
+  3. document=09_minimum_balance similarity=-0.307443 chunk=09_minimum_balance__fixed__000
+Loading weights: 100%|██████████████████████████████████████| 103/103 [00:00<00:00, 4088.09it/s]
+
+========================================================================
+QUERY: What are the rules for prepayment penalties?
+STRATEGY: fixed
+RELEVANT DOCUMENTS: ['08_prepayment_penalties']
+RETRIEVED DOCUMENTS (deduplicated): ['08_prepayment_penalties', '05_fraud_dispute_resolution', '07_interest_rate_slabs']
+RELEVANT RETRIEVED: ['08_prepayment_penalties']
+Precision@3 = 1 / 3 = 0.3333
+Recall@3 = 1 / 1 = 1.0000
+Retrieved chunk details:
+  1. document=08_prepayment_penalties similarity=0.092424 chunk=08_prepayment_penalties__fixed__000
+  2. document=05_fraud_dispute_resolution similarity=-0.284794 chunk=05_fraud_dispute_resolution__fixed__001
+  3. document=07_interest_rate_slabs similarity=-0.385975 chunk=07_interest_rate_slabs__fixed__001
+
+------------------------------------------------------------------------
+FIXED SUMMARY
+Mean Precision@3 = 0.3333
+Mean Recall@3 = 1.0000
+
+########################################################################
+STRATEGY: sentence
+########################################################################
+Loading weights: 100%|██████████████████████████████████████| 103/103 [00:00<00:00, 3274.02it/s]
+
+========================================================================
+QUERY: What documents are required for KYC?
+STRATEGY: sentence
+RELEVANT DOCUMENTS: ['04_kyc_requirements']
+RETRIEVED DOCUMENTS (deduplicated): ['04_kyc_requirements', '12_nri_account_eligibility', '06_account_closure']
+RELEVANT RETRIEVED: ['04_kyc_requirements']
+Precision@3 = 1 / 3 = 0.3333
+Recall@3 = 1 / 1 = 1.0000
+Retrieved chunk details:
+  1. document=04_kyc_requirements similarity=0.486820 chunk=04_kyc_requirements__sentence__000
+  2. document=12_nri_account_eligibility similarity=0.000455 chunk=12_nri_account_eligibility__sentence__000
+  3. document=06_account_closure similarity=-0.453787 chunk=06_account_closure__sentence__000
+Loading weights: 100%|██████████████████████████████████████| 103/103 [00:00<00:00, 3224.85it/s]
+
+========================================================================
+QUERY: How is EMI calculated for a loan?
+STRATEGY: sentence
+RELEVANT DOCUMENTS: ['02_emi_calculation']
+RETRIEVED DOCUMENTS (deduplicated): ['02_emi_calculation', '08_prepayment_penalties', '07_interest_rate_slabs']
+RELEVANT RETRIEVED: ['02_emi_calculation']
+Precision@3 = 1 / 3 = 0.3333
+Recall@3 = 1 / 1 = 1.0000
+Retrieved chunk details:
+  1. document=02_emi_calculation similarity=0.483376 chunk=02_emi_calculation__sentence__000
+  2. document=08_prepayment_penalties similarity=-0.185543 chunk=08_prepayment_penalties__sentence__000
+  3. document=07_interest_rate_slabs similarity=-0.218374 chunk=07_interest_rate_slabs__sentence__000
+Loading weights: 100%|██████████████████████████████████████| 103/103 [00:00<00:00, 3005.16it/s]
+
+========================================================================
+QUERY: What factors affect a credit score?
+STRATEGY: sentence
+RELEVANT DOCUMENTS: ['10_credit_score_factors']
+RETRIEVED DOCUMENTS (deduplicated): ['10_credit_score_factors', '01_loan_eligibility', '07_interest_rate_slabs']
+RELEVANT RETRIEVED: ['10_credit_score_factors']
+Precision@3 = 1 / 3 = 0.3333
+Recall@3 = 1 / 1 = 1.0000
+Retrieved chunk details:
+  1. document=10_credit_score_factors similarity=0.482284 chunk=10_credit_score_factors__sentence__000
+  2. document=01_loan_eligibility similarity=-0.160170 chunk=01_loan_eligibility__sentence__000
+  3. document=07_interest_rate_slabs similarity=-0.316658 chunk=07_interest_rate_slabs__sentence__000
+Loading weights: 100%|██████████████████████████████████████| 103/103 [00:00<00:00, 3107.92it/s]
+
+========================================================================
+QUERY: What is the process for closing an account?
+STRATEGY: sentence
+RELEVANT DOCUMENTS: ['06_account_closure']
+RETRIEVED DOCUMENTS (deduplicated): ['06_account_closure', '11_joint_account_rules', '09_minimum_balance']
+RELEVANT RETRIEVED: ['06_account_closure']
+Precision@3 = 1 / 3 = 0.3333
+Recall@3 = 1 / 1 = 1.0000
+Retrieved chunk details:
+  1. document=06_account_closure similarity=0.132282 chunk=06_account_closure__sentence__000
+  2. document=11_joint_account_rules similarity=-0.091395 chunk=11_joint_account_rules__sentence__000
+  3. document=09_minimum_balance similarity=-0.307443 chunk=09_minimum_balance__sentence__000
+Loading weights: 100%|██████████████████████████████████████| 103/103 [00:00<00:00, 3799.96it/s]
+
+========================================================================
+QUERY: What are the rules for prepayment penalties?
+STRATEGY: sentence
+RELEVANT DOCUMENTS: ['08_prepayment_penalties']
+RETRIEVED DOCUMENTS (deduplicated): ['08_prepayment_penalties', '06_account_closure', '09_minimum_balance']
+RELEVANT RETRIEVED: ['08_prepayment_penalties']
+Precision@3 = 1 / 3 = 0.3333
+Recall@3 = 1 / 1 = 1.0000
+Retrieved chunk details:
+  1. document=08_prepayment_penalties similarity=0.092424 chunk=08_prepayment_penalties__sentence__000
+  2. document=06_account_closure similarity=-0.536403 chunk=06_account_closure__sentence__000
+  3. document=09_minimum_balance similarity=-0.560610 chunk=09_minimum_balance__sentence__000
+
+------------------------------------------------------------------------
+SENTENCE SUMMARY
+Mean Precision@3 = 0.3333
+Mean Recall@3 = 1.0000
+
+========================================================================
+=== FINAL STRATEGY COMPARISON ===
+========================================================================
+Fixed-size:   Precision@3=0.3333, Recall@3=1.0000
+Sentence:     Precision@3=0.3333, Recall@3=1.0000

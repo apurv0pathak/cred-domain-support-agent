@@ -1,0 +1,3 @@
+# NRI Account Eligibility
+
+Non-Resident Indians and other eligible non-resident customers may open account types specifically permitted for their status. Eligibility depends on residency classification, required KYC documentation, source-of-funds requirements, and the rules applicable to the selected account product. The customer must provide the documents required to establish non-resident status and identity.

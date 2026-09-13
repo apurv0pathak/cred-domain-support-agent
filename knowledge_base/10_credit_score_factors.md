@@ -1,0 +1,3 @@
+# Credit-Score Impact Factors
+
+Credit scores are influenced by factors such as repayment history, credit utilization, length of credit history, recent credit applications, and the mix of credit accounts. Timely repayments generally support a healthy credit profile, while missed or delayed payments can negatively affect it. Applying for many new credit facilities within a short period can also influence the profile.
