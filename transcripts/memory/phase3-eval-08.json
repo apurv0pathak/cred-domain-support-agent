@@ -1,0 +1,21 @@
+{
+  "thread_id": "phase3-eval-08",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Are there any penalties for prepayment?"
+    },
+    {
+      "role": "assistant",
+      "content": "Prepayment means repaying some or all of a loan principal before the scheduled maturity date. Whether a prepayment charge applies depends on the loan product, repayment structure, applicable customer category, and prevailing policy. Customers should verify the applicable prepayment terms before making a large early repayment because charges and eligibility conditions can differ between products."
+    },
+    {
+      "role": "user",
+      "content": "Are there any penalties for prepayment?"
+    },
+    {
+      "role": "assistant",
+      "content": "Prepayment means repaying some or all of a loan principal before the scheduled maturity date. Whether a prepayment charge applies depends on the loan product, repayment structure, applicable customer category, and prevailing policy. Customers should verify the applicable prepayment terms before making a large early repayment because charges and eligibility conditions can differ between products."
+    }
+  ]
+}

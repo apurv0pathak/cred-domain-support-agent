@@ -1,0 +1,67 @@
+Cred Domain Support Agent — Phase 3
+Task 12 — Structured JSONL Logging Verification
+
+Environment:
+MOCK_LLM=true
+
+Log file:
+transcripts/logs/api_requests.jsonl
+
+--------------------------------------------------
+1. Normal API request
+--------------------------------------------------
+
+Command:
+
+curl -X POST http://127.0.0.1:8000/ask -H "Content-Type: application/json" -d "{\"query\":\"How is EMI calculated?\",\"thread_id\":\"logging-test\"}"
+
+Actual response:
+
+{"answer":"Equated Monthly Instalment (EMI) depends on the principal, applicable annual interest rate, and repayment tenure. The standard reducing-balance EMI formula is EMI = P × r × (1+r)^n / ((1+r)^n - 1), where P is principal, r is the monthly interest rate, and n is the number of monthly instalments.","route":"rag","escalation_score":null,"thread_id":"logging-test","record_id":null,"grounded":true}
+
+Actual JSONL entry:
+
+{"trace_id": "dd755d55-71cb-4bf2-93bd-597acca1c00d", "timestamp": "2026-09-13T20:12:05.123516+00:00", "method": "POST", "path": "/ask", "masked_request_text": "How is EMI calculated?", "status_code": 200, "duration_ms": 279.14, "route": null, "grounded": null, "error": null}
+
+--------------------------------------------------
+2. PII masking verification
+--------------------------------------------------
+
+Command:
+
+curl -X POST http://127.0.0.1:8000/ask -H "Content-Type: application/json" -d "{\"query\":\"Please check my PAN ABCDE1234F, Aadhaar 1234 5678 9012, and bank account 1234567890123\",\"thread_id\":\"pii-logging-test\"}"
+
+Actual response:
+
+{"answer":"I don't know based on the Cred knowledge base.","route":"rag","escalation_score":null,"thread_id":"pii-logging-test","record_id":null,"grounded":false}
+
+Actual JSONL entry:
+
+{"trace_id": "e84a3a76-a85d-45ec-825f-076003f8949f", "timestamp": "2026-09-13T20:14:38.515839+00:00", "method": "POST", "path": "/ask", "masked_request_text": "Please check my PAN [PAN_MASKED], Aadhaar [AADHAAR_MASKED], and bank account [BANK_ACCOUNT_MASKED]", "status_code": 200, "duration_ms": 124.89, "route": null, "grounded": null, "error": null}
+
+--------------------------------------------------
+3. Verification result
+--------------------------------------------------
+
+One JSONL entry was produced for each API request.
+
+Trace ID: PASS
+Timestamp/timing information: PASS
+HTTP method/path: PASS
+Request text recorded: PASS
+PII masking: PASS
+
+Verified masking:
+
+PAN:
+ABCDE1234F -> [PAN_MASKED]
+
+Grouped Aadhaar:
+1234 5678 9012 -> [AADHAAR_MASKED]
+
+Bank account:
+1234567890123 -> [BANK_ACCOUNT_MASKED]
+
+Raw fixed-format PII was not present in the logged request text.
+
+Task 12 Structured JSONL Logging: PASS

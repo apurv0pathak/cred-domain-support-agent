@@ -1,0 +1,68 @@
+Cred Domain Support Agent — Phase 3
+Task 11 — FastAPI Deployment Verification
+
+Environment:
+MOCK_LLM=true
+API server: uvicorn api.main:app --reload
+Base URL: http://127.0.0.1:8000
+
+--------------------------------------------------
+1. FastAPI startup
+--------------------------------------------------
+
+Command:
+
+uvicorn api.main:app --reload
+
+Actual output:
+
+INFO:     Will watch for changes in these directories: ['C:\\Users\\patha\\Desktop\\agentic\\cred-domain-support-agent-main']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [27664] using WatchFiles
+INFO:     Started server process [7784]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+
+--------------------------------------------------
+2. GET /health
+--------------------------------------------------
+
+Command:
+
+curl http://127.0.0.1:8000/health
+
+Actual response:
+
+{"status":"ok","service":"cred-domain-support-agent"}
+
+Uvicorn request log:
+
+INFO:     127.0.0.1:52704 - "GET /health HTTP/1.1" 200 OK
+
+--------------------------------------------------
+3. POST /ask
+--------------------------------------------------
+
+Command:
+
+curl -X POST http://127.0.0.1:8000/ask -H "Content-Type: application/json" -d "{\"query\":\"How is EMI calculated?\",\"thread_id\":\"phase3-api-test\"}"
+
+Actual response:
+
+{"answer":"Equated Monthly Instalment (EMI) depends on the principal, applicable annual interest rate, and repayment tenure. The standard reducing-balance EMI formula is EMI = P × r × (1+r)^n / ((1+r)^n - 1), where P is principal, r is the monthly interest rate, and n is the number of monthly instalments.","route":"rag","escalation_score":null,"thread_id":"phase3-api-test","record_id":null,"grounded":true}
+
+Uvicorn request log:
+
+Loading weights: 100%|█| 103/103 [00:00<00:00, 45048.31it/
+INFO:     127.0.0.1:52706 - "POST /ask HTTP/1.1" 200 OK
+
+--------------------------------------------------
+4. Verification result
+--------------------------------------------------
+
+GET /health: PASS
+POST /ask: PASS
+Pydantic API response: PASS
+Existing Phase 2 agent exercised through /ask: PASS
+
+Task 11 FastAPI Deployment: PASS

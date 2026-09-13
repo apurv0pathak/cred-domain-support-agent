@@ -1,0 +1,13 @@
+{
+  "thread_id": "pii-logging-test",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Please check my PAN [PAN_MASKED], Aadhaar [AADHAAR_MASKED], and bank account [BANK_ACCOUNT_MASKED]"
+    },
+    {
+      "role": "assistant",
+      "content": "I don't know based on the Cred knowledge base."
+    }
+  ]
+}

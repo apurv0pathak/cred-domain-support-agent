@@ -1,0 +1,21 @@
+{
+  "thread_id": "phase3-eval-03",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What fees are charged for a credit card?"
+    },
+    {
+      "role": "assistant",
+      "content": "A credit card may have an annual or membership fee depending on the card variant. Other applicable charges can include late-payment fees, cash-advance charges, foreign-currency transaction charges, and fees associated with certain optional services. The exact amount of a fee depends on the applicable card schedule and should be checked against the customer's card product."
+    },
+    {
+      "role": "user",
+      "content": "What fees are charged for a credit card?"
+    },
+    {
+      "role": "assistant",
+      "content": "A credit card may have an annual or membership fee depending on the card variant. Other applicable charges can include late-payment fees, cash-advance charges, foreign-currency transaction charges, and fees associated with certain optional services. The exact amount of a fee depends on the applicable card schedule and should be checked against the customer's card product."
+    }
+  ]
+}

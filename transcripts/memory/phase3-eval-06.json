@@ -1,0 +1,21 @@
+{
+  "thread_id": "phase3-eval-06",
+  "messages": [
+    {
+      "role": "user",
+      "content": "How can I close my account?"
+    },
+    {
+      "role": "assistant",
+      "content": "I don't know based on the Cred knowledge base."
+    },
+    {
+      "role": "user",
+      "content": "How can I close my account?"
+    },
+    {
+      "role": "assistant",
+      "content": "I don't know based on the Cred knowledge base."
+    }
+  ]
+}

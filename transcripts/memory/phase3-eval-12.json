@@ -1,0 +1,21 @@
+{
+  "thread_id": "phase3-eval-12",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Can an NRI open an account?"
+    },
+    {
+      "role": "assistant",
+      "content": "Non-Resident Indians and other eligible non-resident customers may open account types specifically permitted for their status. Eligibility depends on residency classification, required KYC documentation, source-of-funds requirements, and the rules applicable to the selected account product."
+    },
+    {
+      "role": "user",
+      "content": "Can an NRI open an account?"
+    },
+    {
+      "role": "assistant",
+      "content": "Non-Resident Indians and other eligible non-resident customers may open account types specifically permitted for their status. Eligibility depends on residency classification, required KYC documentation, source-of-funds requirements, and the rules applicable to the selected account product."
+    }
+  ]
+}

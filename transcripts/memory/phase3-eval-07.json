@@ -1,0 +1,21 @@
+{
+  "thread_id": "phase3-eval-07",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What are the interest rate slabs?"
+    },
+    {
+      "role": "assistant",
+      "content": "Loan interest rates may be organized into slabs based on factors such as loan type, applicant risk profile, loan amount, tenure, and credit history. A stronger credit profile may qualify for a more favorable rate where the applicable product policy permits risk-based pricing."
+    },
+    {
+      "role": "user",
+      "content": "What are the interest rate slabs?"
+    },
+    {
+      "role": "assistant",
+      "content": "Loan interest rates may be organized into slabs based on factors such as loan type, applicant risk profile, loan amount, tenure, and credit history. A stronger credit profile may qualify for a more favorable rate where the applicable product policy permits risk-based pricing."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "thread_id": "phase3-eval-11",
+  "messages": [
+    {
+      "role": "user",
+      "content": "What are the rules for a joint account?"
+    },
+    {
+      "role": "assistant",
+      "content": "Joint accounts are held by two or more account holders under the operating instructions selected during account opening. The permitted transactions and authority of each holder depend on the selected operating mandate and applicable product rules."
+    },
+    {
+      "role": "user",
+      "content": "What are the rules for a joint account?"
+    },
+    {
+      "role": "assistant",
+      "content": "Joint accounts are held by two or more account holders under the operating instructions selected during account opening. The permitted transactions and authority of each holder depend on the selected operating mandate and applicable product rules."
+    }
+  ]
+}
